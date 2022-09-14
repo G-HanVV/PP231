@@ -1,6 +1,6 @@
-package web.hiber.service;
+package hiber.service;
 
-import web.hiber.model.Car;
+import hiber.model.Car;
 
 import java.util.List;
 

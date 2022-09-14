@@ -1,6 +1,6 @@
-package web.hiber.config;
+package hiber.config;
 
-import web.hiber.model.Car;
+import hiber.model.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,7 +19,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan(value = "web.hiber")
+@ComponentScan(value = "hiber")
 public class HiberConfig {
 
     @Autowired

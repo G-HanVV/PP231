@@ -1,10 +1,10 @@
-package web.hiber.service;
+package hiber.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import web.hiber.dao.CarDao;
-import web.hiber.model.Car;
+import hiber.dao.CarDao;
+import hiber.model.Car;
 
 import java.util.List;
 

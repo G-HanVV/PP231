@@ -1,4 +1,4 @@
-package web.hiber.model;
+package hiber.model;
 
 import javax.persistence.*;
 

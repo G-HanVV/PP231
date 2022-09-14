@@ -1,6 +1,6 @@
-package web.hiber.dao;
+package hiber.dao;
 
-import web.hiber.model.Car;
+import hiber.model.Car;
 
 import java.util.List;
 
