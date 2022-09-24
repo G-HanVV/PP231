@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Start</title>
 </head>
 <body>
-<div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
-    </th:block>
-    <a href="/spring_mvc_war/car/start?count=1">Get 1 car</a>
-    <br>
-    <a href="/spring_mvc_war/car/start?count=2">Get 2 car</a>
-    <br>
-    <a href="/spring_mvc_war/car/start?count=3">Get 3 car</a>
-    <br>
-    <a href="/spring_mvc_war/car/start?count=4">Get 4 car</a>
-    <br>
-    <a href="/spring_mvc_war/car/start?count=5">Get 5 car</a>
-    <br>
-    <a href="/spring_mvc_war/car/start?count=6">Get 6 car</a>
-</div>
+<h1>Users</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.surname}"></td>
+        <td th:text="${user.age}"></td>
+        <td><a th:href="@{/{id}/edit(id = ${user.id})}">Update</a></td>
+        <td><form th:method="delete" th:action="@{/{id}(id = ${user.id})}">
+            <input type="submit" value="Delete"/>
+        </form></td>
+    </tr>
+</table>
+<br/> <br/> <a href="/PP_2_3_1_app_war_exploded/form">New user</a>
+
 </body>
 </html>
