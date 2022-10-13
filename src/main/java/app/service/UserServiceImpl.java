@@ -1,7 +1,7 @@
-package hiber.service;
+package app.service;
 
-import hiber.dao.UserDao;
-import hiber.model.User;
+import app.dao.UserDao;
+import app.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

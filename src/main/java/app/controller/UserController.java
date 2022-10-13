@@ -1,11 +1,11 @@
-package web.controller;
+package app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import hiber.model.User;
-import hiber.service.UserService;
+import app.model.User;
+import app.service.UserService;
 
 import java.util.List;
 
