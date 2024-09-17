@@ -23,6 +23,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void add(User user) {
+//        System.out.println(user);
         userDao.add(user);
     }
 
